@@ -90,7 +90,7 @@ export default {
   justify-content: center;
   border: 0;
   margin: 0;
-  padding: 0;
+  padding-right: 5px;
 }
 .content1 {
   display: flex;
