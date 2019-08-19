@@ -9,7 +9,7 @@
         <h6>HELLO EVERYBODY, I AM</h6>
         <div class="meunnome">Romeu Cornelius Junior</div>
         <h4>Senior Sofware Developer</h4>
-        <p class="parAbout">
+        <p class="parAbout title font-weight-light">
            Passionate about research, and learning software development, data visualization, and applying science and technology in the majority world by
            taking what's in a scientific publication and turning it into a real project that solves a business need. I'm a self-starter with a proven ability 
            to leverage multiple technologies to build interactive and innovative applications. 
@@ -90,7 +90,7 @@ export default {
   justify-content: center;
   border: 0;
   margin: 0;
-  padding-right: 5px;
+  padding: 0;
 }
 .content1 {
   display: flex;
@@ -137,14 +137,6 @@ export default {
     text-transform: uppercase;
     margin-bottom: 20px;
     color: #222;
-}
-
-.parAbout {
-    font-size: 1em;
-    font-family: Verdana, Tahoma, sans-serif;
-    margin: 0;
-    font-weight: 300;
-    
 }
 
 .personal_social li  {

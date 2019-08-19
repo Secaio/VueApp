@@ -1,8 +1,10 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
-import Home from './views/Home.vue'
-import About from './views/About.vue'
+import Home     from './views/Home.vue'
+import About    from './views/About.vue'
+import Services from './views/Services.vue'
+import GetTouch from './views/GetInTouch.vue'
 
 
 Vue.use(Router)
@@ -20,6 +22,16 @@ export default new Router({
       path: '/about',
       name: 'about',
       component: About
-    }   
+    },
+    {
+      path: '/services',
+      name: 'services',
+      component: Services
+    },
+    {
+      path: '/touch',
+      name: 'touch',
+      component: GetTouch
+    }    
   ]
 })

@@ -3,7 +3,7 @@
     <v-layout white>
       <v-flex xs12 md6 pa-5>
         <base-bubble-1 style="transform: translate(5%, -5%)"/>
-        <base-heading class="info--text">
+        <base-heading class="black--text">
           About Me
         </base-heading>
 
@@ -14,7 +14,7 @@
           (Vue, React) and Node with MySql, PostgresSql and MongoDB. 
         </base-text>
 
-        <base-subheading class="info--text">
+        <base-subheading class="black--text">
           Skills 
         </base-subheading>
         <base-text class="mb-5">
@@ -30,7 +30,7 @@
           </v-layout>
         </v-alert>
 
-        <base-subheading class="info--text">
+        <base-subheading class="black--text">
           Strengths 
         </base-subheading>
         <base-text class="mb-5">
