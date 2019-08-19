@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="content">
-        <img  class="foto" src='../assets/imgs/me.jpg' alt="Yes, this is" />       
+        <img  class="foto" src='../assets/imgs/me.png' alt="Yes, this is" />       
     </div>
     <div class="content1">
       <div class="texto">
@@ -19,8 +19,8 @@
           <li><a href="https://github.com/Secaio" target="_blank" rel="noopener noreferrer"><img src='../assets/icos/ghit.png' /></a></li>         
           <li><a href="https://www.facebook.com/romeu.corneliusjunior" target="_blank" rel="noopener noreferrer"><img src='../assets/icos/face.png' /></a></li>
           <li><a href="https://www.instagram.com/romeucorneliusjunior/?hl=en" target="_blank" rel="noopener noreferrer"><img src='../assets/icos/insta.png' /></a></li>          
-          <li><a @click="skype()"><img src='../assets/icos/skype.png' title="romeucjunior@hotmail.com" /></a></li>
-          <li><a @click="whatts()"><img src='../assets/icos/whatts.png' title="+5551982158117" /></a></li>
+          <li><a @click="skype()"><img src='../assets/icos/skype.png' title="Click me to see my Skype info" /></a></li>
+          <li><a @click="whatts()"><img src='../assets/icos/whatts.png' title="Click me to see my whatts info" /></a></li>
         </ul>
         <base-bubble-2
           style="transform: rotate(180deg) translate(-150px, -15%)"
@@ -43,10 +43,8 @@
 
 <script>
 export default {
-  name: 'indice',
   props: {
     msg: String
-
   },
   data() {
     return {

@@ -71,7 +71,7 @@
           this.drawer = !this.drawer
           }   
       },
-      mounted() {
+      created() {
           barramento.onDrawerClick(() => {
             this.drawer =  !this.drawer
         })     
