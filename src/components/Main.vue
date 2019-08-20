@@ -21,6 +21,7 @@
           <li><a href="https://www.instagram.com/romeucorneliusjunior/?hl=en" target="_blank" rel="noopener noreferrer"><img src='../assets/icos/insta.png' /></a></li>          
           <li><a @click="skype()"><img src='../assets/icos/skype.png' title="Click me to see my Skype info" /></a></li>
           <li><a @click="whatts()"><img src='../assets/icos/whatts.png' title="Click me to see my whatts info" /></a></li>
+          <li><a @click="mail()"><img src='../assets/icos/mail.png' title="Click me to see my e-mail info" /></a></li>          
         </ul>
         <base-bubble-2
           style="transform: rotate(180deg) translate(-150px, -15%)"
@@ -66,7 +67,13 @@ export default {
           this.titulo = 'My WhattsApp number is:'
           this.user   = '+55 51 98215 8117'                     
           this.adr    = ''
-        }, 
+        },
+     mail() {
+          this.diag   = true
+          this.titulo = 'My e-mail address is:'
+          this.user   = 'secaio@secaio.com'                     
+          this.adr    = 'romeucjunior@hotmail.com'
+        },        
     }
 }
 </script>
