@@ -36,7 +36,7 @@
 
 <script>
 
-(function(){
+(() => {
     emailjs.init("user_lUp1TZyYqyxe3TS1aZdTF");
  })();
 
