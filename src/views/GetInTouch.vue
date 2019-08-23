@@ -32,13 +32,10 @@
   </section>
 </template>
 
-<script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+
 
 <script>
-
-const func = (() => {
-    emailjs.init("user_lUp1TZyYqyxe3TS1aZdTF");
- })();
+import * as emailjs from 'emailjs-com'
 
 export default {
   
@@ -57,41 +54,59 @@ export default {
 
   methods: {
 
-     clearAll(){
+     clearAll() {
         this.name    = '',
         this.email   = '',
         this.subject = '',
         this.message = ''       
      }, 
 
-     msg(status, error){
-       if (status) {
+     msg( op, msg ) {
+        switch ( op ) {
+          case 0:
             this.titulo = 'Sucess'
             this.retrn1 = 'Your email has been sent successfully!'
-            this.retrn2 = 'I will answer to you as soon as possible...'                     
+            this.retrn2 = 'I will answer you as soon as possible...'                     
             this.diag   = true
-       } else {
+          break;
+          case 1:
             this.titulo = 'Failure'
-            this.retrn1 = 'Please try again later...'                     
-            this.retrn2 =  'Error: '+error
+            this.retrn1 = 'Something got wrong, please try again later...'                     
+            this.retrn2 =  'Error: '+ msg
             this.diag   = true
-       }
+          break;
+          case 2:
+            this.titulo = 'Ops!'
+            this.retrn1 = 'Sorry, but you have to fill all fields before...'                     
+            this.retrn2 = 'Then you can click and send the e-mail to me.'
+            this.diag   = true
+          break;
+        }
      },       
 
-     sendMail(){
-        let templateParams = {
+     validate() {
+       return this.name && this.email && this.subject && this.message
+     },
+     
+     sendMail() {
+       const test = this.validate()
+       if (!test) {
+         this.msg( 2 , '' )
+       } else {
+          let templateParams = {
           to_name:      "Romeu",
           reply_to:     this.email,
           from_name:    this.name,       
           message_html: this.message        
-        }
-        
-        emailjs.send('gmail', 'template_pFm7baaj', templateParams)
-               .then( response => { this.msg(true,'') },
-                         error => { this.msg(false,error)}
-                    )
-               .then( this.clearAll() )   
-    }
+          }
+          emailjs.init("user_lUp1TZyYqyxe3TS1aZdTF")
+          emailjs.send('gmail', 'template_pFm7baaj', templateParams)
+                 .then( response => { this.msg( 0 , response.text) },
+                           error => { this.msg( 1 , error)}
+                      )
+                 .then( this.clearAll() ) 
+        }              
+     }
   }
 }
 </script>

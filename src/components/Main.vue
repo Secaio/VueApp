@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="content">
-        <img  class="foto" src='../assets/imgs/me.png' alt="Yes, this is" />       
+        <img  class="foto" src='../assets/imgs/me.png' alt="Yes, this is me" />       
     </div>
     <div class="content1">
       <div class="texto">

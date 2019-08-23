@@ -10,6 +10,7 @@
   "dependencies": {
     "@mdi/font": "^3.6.95",
     "core-js": "^2.6.5",
+    "emailjs-com": "^2.3.2",
     "register-service-worker": "^1.6.2",
     "roboto-fontface": "*",
     "vue": "^2.6.10",
