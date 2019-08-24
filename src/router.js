@@ -3,9 +3,10 @@ import Router from 'vue-router'
 
 import Home     from './views/Home.vue'
 import About    from './views/About.vue'
-import Services from './views/Services.vue'
+import Certific from './views/Certificate.vue'
 import GetTouch from './views/GetInTouch.vue'
 import Projects from './views/RecentProjects.vue'
+import Services from './views/Services.vue'
 
 
 Vue.use(Router)
@@ -25,6 +26,16 @@ export default new Router({
       component: About
     },
     {
+      path: '/Certifications',
+      name: 'Certifications',
+      component: Certific
+    },
+    {
+      path: '/projects',
+      name: 'projects',
+      component: Projects
+    },     
+    {
       path: '/services',
       name: 'services',
       component: Services
@@ -33,11 +44,6 @@ export default new Router({
       path: '/touch',
       name: 'touch',
       component: GetTouch
-    },
-    {
-      path: '/projects',
-      name: 'projects',
-      component: Projects
     }    
   ]
 })
