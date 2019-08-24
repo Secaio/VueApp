@@ -3,7 +3,7 @@
     <v-layout row wrap>
       <v-flex xs12 mb-10 mt-5>        
         <base-headingCenter>
-          My Certifications
+          Certifications
         </base-headingCenter>
 
       </v-flex>
