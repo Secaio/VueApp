@@ -19,13 +19,13 @@ export default {
 	data() {
 		return {
 			fotos: [
-                {src: require('@/assets/cert/Unisc.jpeg')},
-				{src: require('@/assets/cert/DataMining.jpeg')},
+				{src: require('@/assets/cert/JavaScript.jpg')},
+				{src: require('@/assets/cert/Python.jpg')},                
 				{src: require('@/assets/cert/DataScience.jpeg')},
+				{src: require('@/assets/cert/DataMining.jpeg')},
+                {src: require('@/assets/cert/Unisc.jpeg')},
 				{src: require('@/assets/cert/Espanhol.jpeg')},
 				{src: require('@/assets/cert/Gastronomia.jpeg')},
-				{src: require('@/assets/cert/JavaScript.jpg')},
-				{src: require('@/assets/cert/Python.jpg')},
 			]
 		}
     },

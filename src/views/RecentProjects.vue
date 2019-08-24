@@ -30,11 +30,12 @@
         </v-card>
       </v-flex>
       <v-flex hidden-sm-and-down md6 mt-10 mr-2 align-self-start="true">
-        <Project>           
+        <Project>    
+
           <base-headingCenter slot="title" >
             {{ title }}
           </base-headingCenter  >             
-          
+
           <v-img  slot="picture"
              :src="require(`@/assets/imgs/${pictr}.jpeg`)"
           />
@@ -47,8 +48,6 @@
         <base-bubble-2
           style="transform: rotate(180deg) translate(-150px, -15%)"
         />      
-
-
       </v-flex>
     </v-layout>
   </section>
@@ -59,7 +58,6 @@ import Project from '../components/Project.vue'
 
 export default {
   components: { Project },
-
   data: () => ({
     title: '',
     defin: '',
