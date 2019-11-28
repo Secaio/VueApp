@@ -12,8 +12,8 @@
 
           <div class="d-flex flex-row-reverse mb-1">
             <img src="@/assets/imgs/red.png" class="rounded pr-1" alt="Descontente" />
-            <img src="@/assets/imgs/amarelo.png" class="rounded pr-4" alt="meia boca" />
-            <img src="@/assets/imgs/verde.png" class="rounded pr-4" alt="Contente" />
+            <img src="@/assets/imgs/amarelo.png" class="rounded pr-1" alt="meia boca" />
+            <img src="@/assets/imgs/verde.png" class="rounded pr-1" alt="Contente" />
           </div>
 
           <v-list class="mb-10" solo flat>
@@ -25,9 +25,9 @@
                       <v-list-item-action-text v-text="item.text" />
                     </div>
                     <div class="d-flex justify-content-between">
-                      <v-checkbox class="pl-10"  />
-                      <v-checkbox class="pl-10"  />
-                      <v-checkbox class="pl-10"  />
+                      <v-checkbox class="pl-5"  />
+                      <v-checkbox class="pl-5"  />
+                      <v-checkbox class="pl-5"  />
                     </div>
                   </v-list-item-action>
                 </v-list-item-content>
@@ -167,7 +167,7 @@ export default {
     desmarca() {
       var checks = document.querySelectorAll('input[type="checkbox"]');    
       for(let i = 0; i < checks.length; i++) {
-        this.checks[i].checked = false;   
+        checks[i].checked = false;   
   }
     },
 
@@ -177,8 +177,8 @@ export default {
         this.msg(2, "");
       } else {
         this.msg(0, "");
-        this.desmarca();
         this.clearAll();
+        this.desmarca();
       }
     }
   }
