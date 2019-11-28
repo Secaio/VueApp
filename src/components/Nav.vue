@@ -63,7 +63,12 @@
           title: 'Get In Touch With Me',
           ico: 'mdi-contact-phone',
           to: '/touch'
-        }                 
+        },
+        {
+          title: 'Research',
+          ico: 'mdi-contact-phone',
+          to: '/research'
+        }                          
       ]
     }),
     methods: {

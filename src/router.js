@@ -7,6 +7,7 @@ import Certific from './views/Certificate.vue'
 import GetTouch from './views/GetInTouch.vue'
 import Projects from './views/RecentProjects.vue'
 import Services from './views/Services.vue'
+import Research from './views/Research.vue'
 import Education from './views/Education.vue'
 import Experience from './views/Experience.vue'
 
@@ -55,6 +56,11 @@ export default new Router({
       path: '/touch',
       name: 'touch',
       component: GetTouch
-    }    
+    },
+    {
+      path: '/research',
+      name: 'research',
+      component: Research
+    }   
   ]
 })

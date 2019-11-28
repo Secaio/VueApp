@@ -45,7 +45,9 @@
         {
           company: 'Di Hellen Cosméticos',
           job: `Development and research for business process management also maintaining and developing new modules for their internal systems. 
-          Mobile development for Pocket PC platform and data integration.`,            
+          Mobile development for Pocket PC platform and data integration. 
+          Trabalhei na juncão da fábrica com o centro de distribuição, fazendo a compra e a 
+          industrialização para evitar impostos`,            
           color: 'green',
           year: '2008 - 2009',
         },
